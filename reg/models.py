@@ -69,6 +69,10 @@ class People(models.Model):
     def __str__(self):
         return self.name+" "+str( self.pid )
 
+    def validate(p):
+        name = p.name;
+
+
 
 class Pids(models.Model):
     pid = models.IntegerField(db_column='pId', blank=True, null=True)  # Field name made lowercase.
